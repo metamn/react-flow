@@ -1,0 +1,15 @@
+// @flow
+
+import React from "react";
+
+type Props = {
+  src: number,
+  title: number
+};
+
+const Image = (props: Props) => {
+  const { src, title } = props;
+  return <img src={src} title={title} />;
+};
+
+export default Image;
