@@ -1,11 +1,16 @@
 [ignore]
+.*/build/.*
+.*/node_modules/findup/.*
+.*/node_modules/config-chain/.*
 
 [include]
+./src/**
 
 [libs]
-
-[lints]
+./flow-typed
 
 [options]
+module.name_mapper='^\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+suppress_comment= \\(.\\|\n\\)*\\@flow-ignore
 
-[strict]
+[lints]

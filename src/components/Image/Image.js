@@ -9,7 +9,7 @@ type Props = {
 
 const Image = (props: Props) => {
   const { src, title } = props;
-  return <img src={src} title={title} />;
+  return <img src={src} alt={title} />;
 };
 
 export default Image;
